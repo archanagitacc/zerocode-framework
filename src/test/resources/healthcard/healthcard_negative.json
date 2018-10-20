@@ -1,0 +1,29 @@
+{
+    "scenarioName": "Health card details - Negative scenarios",
+    "steps": [
+         {
+            "name": "Get Traffic Light details",
+            "url": "/rest/services/v1/avcs/speed-assurance-traffic-light1",
+            "operation": "POST",
+            "request": {
+             "body": {
+                      "accessSeekerId":"ASI000000000035",
+                      "serviceId":"AVC000018418265"
+                     }
+            },
+            "assertions": {
+                "status": 200,
+                "body": {
+			"metadata":{
+    "accessSeekerId":"ASI000000000000",
+    "serviceId":"AVC000000000001"
+  },
+  "exception":{
+    "code":"000002",
+    "message":"Unable to retrieve speed degradation data. UC2 is applicable."
+  }
+                }
+            }
+        }
+    ]
+}

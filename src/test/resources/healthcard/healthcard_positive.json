@@ -1,0 +1,252 @@
+{
+    "scenarioName": "Health card details - Positive scenarios",
+    "steps": [
+        {
+            "name": "Get Healthcard details",
+            "url": "/rest/services/v1/avcs/service-health-card/AVC000018418265",
+            "operation": "GET",
+            "request": {
+            },
+            "assertions": {
+                "status": 200,
+                "body": {
+			"serviceId": "AVC000000000001",
+		"transactionTimestamp": "2018-09-28T06:21:41.263Z",
+		"basedOnDataUpdatedEvery15mins": {
+			"modemOperationalStateForPast24Hours": [{
+					"value": "up",
+					"timestamp": "2018-10-14T23:41:37.144Z"
+				},
+				{
+					"value": "up",
+					"timestamp": "2018-10-15T04:34:28.801058Z"
+				},
+				{
+					"value": "down",
+					"timestamp": "2018-08-13T01:56:24.798Z"
+				},
+				{
+					"value": "down",
+					"timestamp": "2018-08-13T01:41:24.798Z"
+				},
+				{
+					"value": "down",
+					"timestamp": "2018-08-13T01:26:24.798Z"
+				}
+			],
+			"sumUnavailableSecondCountersForPast24Hours": 870,
+			"unavailableSecondCountersForPast24Hours": [{
+					"timestamp": "2018-08-13T02:26:24.798Z",
+					"value": 3
+				},
+				{
+					"timestamp": "2018-08-13T02:11:24.798Z",
+					"value": 0
+				},
+				{
+					"timestamp": "2018-08-13T01:56:24.798Z",
+					"value": 1
+				},
+				{
+					"timestamp": "2018-08-13T01:41:24.798Z",
+					"value": 0
+				},
+				{
+					"timestamp": "2018-08-13T01:26:24.798Z",
+					"value": 30
+				}
+			],
+			"sumSeverelyErroredSecondsDownstreamForPast24Hours": 41,
+			"sumSeverelyErroredSecondsUpstreamForPast24Hours": 17,
+			"severelyErroredSeconds": {
+				"downstreamForPast24Hours": [{
+						"timestamp": "2018-08-13T02:26:24.798Z",
+						"value": 3
+					},
+					{
+						"timestamp": "2018-08-13T02:11:24.798Z",
+						"value": 0
+					},
+					{
+						"timestamp": "2018-08-13T01:56:24.798Z",
+						"value": 0
+					},
+					{
+						"timestamp": "2018-08-13T01:41:24.798Z",
+						"value": 3
+					},
+					{
+						"timestamp": "2018-08-13T01:26:24.798Z",
+						"value": 35
+					}
+				],
+				"upstreamForPast24Hours": [{
+						"timestamp": "2018-08-13T02:26:24.798Z",
+						"value": 2
+					},
+					{
+						"timestamp": "2018-08-13T02:11:24.798Z",
+						"value": 0
+					},
+					{
+						"timestamp": "2018-08-13T01:56:24.798Z",
+						"value": 1
+					},
+					{
+						"timestamp": "2018-08-13T01:41:24.798Z",
+						"value": 12
+					},
+					{
+						"timestamp": "2018-08-13T01:26:24.798Z",
+						"value": 2
+					}
+				]
+			},
+			"dropouts": {
+				"dropoutFault": true,
+				"dropout24HoursFault": true,
+				"dropoutsPast24Hours": 8,
+				"sumReInitialisationCountersForPast24Hours": 10,
+				"sumLossOfPowerCountersForPast24Hours": 8,
+				"dropout48HoursFault": false,
+				"dropoutsPast48Hours": 2,
+				"sumReInitialisationCountersForPast48Hours": 10,
+				"sumLossOfPowerCountersForPast48Hours": 8,
+				"reInitialisationCounterPast48Hours": [{
+						"value": 0,
+						"timestamp": "2018-08-13T02:26:24.798Z"
+					},
+					{
+						"value": 0,
+						"timestamp": "2018-08-13T02:11:24.798Z"
+					},
+					{
+						"value": 0,
+						"timestamp": "2018-08-13T01:56:24.798Z"
+					},
+					{
+						"value": 0,
+						"timestamp": "2018-08-13T01:41:24.798Z"
+					},
+					{
+						"value": 10,
+						"timestamp": "2018-08-13T01:26:24.798Z"
+					}
+				],
+				"lossOfPowerCounterPast48Hours": [{
+						"value": 0,
+						"timestamp": "2018-08-13T02:26:24.798Z"
+					},
+					{
+						"value": 0,
+						"timestamp": "2018-08-13T02:11:24.798Z"
+					},
+					{
+						"value": 0,
+						"timestamp": "2018-08-13T01:56:24.798Z"
+					},
+					{
+						"value": 4,
+						"timestamp": "2018-08-13T01:41:24.798Z"
+					},
+					{
+						"value": 4,
+						"timestamp": "2018-08-13T01:26:24.798Z"
+					}
+				]
+			},
+			"loopAttenuation": {
+				"loopAttenuationWarning": false,
+				"loopAttenuationVariationForPast24Hours": 655,
+				"loopAttenuationUnitType": "dB",
+				"loopAttenuationDownstreamForPast24Hours": [{
+						"value": 0,
+						"timestamp": "2018-08-13T02:26:24.798Z"
+					},
+					{
+						"value": 2,
+						"timestamp": "2018-08-13T02:11:24.798Z"
+					},
+					{
+						"value": 655,
+						"timestamp": "2018-08-13T01:56:24.798Z"
+					},
+					{
+						"value": 655,
+						"timestamp": "2018-08-13T01:41:24.798Z"
+					},
+					{
+						"value": 600,
+						"timestamp": "2018-08-13T01:26:24.798Z"
+					}
+				]
+			}
+		},
+		"basedOnDataUpdatedEvery24Hours": {
+			"cpeListFromPast30Days": [{
+					"make": "Huawei",
+					"serialNumber": "AA:AA:AA:AA:AA:AA",
+					"model": "Hi9jguj",
+					"firmwareVersion": "2.3.565.1152212",
+					"timestamp": "2018-08-12T13:41:07.798Z"
+				},
+				{
+					"make": "Netcomm",
+					"serialNumber": "BCFIDLLDIEKD",
+					"model": "Il9384",
+					"firmwareVersion": "150.258",
+					"timestamp": "2018-08-11T13:41:07.798Z"
+				}
+			],
+			"failedReInitialisations": 3,
+			"failedReInitialisationsTimestamp": "2018-08-12T13:41:07.798Z",
+			"actualRateAdaptationModeDownstream": "3",
+			"actualRateAdaptationModeUpstream": "5",
+			"actualRateAdaptationModeTimestamp": "2018-08-12T13:41:07.798Z",
+			"noiseMarginDownstream": 2379,
+			"noiseMarginUpstream": 2379,
+			"noiseMarginTimestamp": "2018-08-12T13:41:07.798Z",
+			"noiseMarginUnitType": "dB",
+			"outputPowerDownstream": 9999,
+			"outputPowerUpstream": 100,
+			"outputPowerTimestamp": "2018-08-12T13:41:07.798Z",
+			"outputPowerUnitType": "dBm",
+			"impulseNoiseProtectionDownstream": 123,
+			"impulseNoiseProtectionUpstream": 27071,
+			"impulseNoiseProtectionTimestamp": "2018-08-12T13:41:07.798Z",
+			"impulseNoiseProtectionUnitType": "symbols"
+		},
+  		"notes": [{
+		"description": "NAC Data for AVC000000000001 not found. 24 Hour data is currently unavailable",
+		"type": "Warning",
+		"id": "000404"
+	}]
+                }
+            }
+        },
+         {
+            "name": "Get Traffic Light details",
+            "url": "/rest/services/v1/avcs/speed-assurance-traffic-light",
+            "operation": "POST",
+            "request": {
+             "body": {
+  "accessSeekerId":"ASI000000000035",
+  "serviceId":"AVC000018418265"
+  }
+            },
+            "assertions": {
+                "status": 200,
+                "body": {
+			"metadata":{
+    "accessSeekerId":"ASI000000000000",
+    "serviceId":"AVC000000000001"
+  },
+  "exception":{
+    "code":"000001",
+    "message":"Access seeker is not part of the trial."
+  }
+                }
+            }
+        }
+    ]
+}
